@@ -1,7 +1,5 @@
-[{if ($oView->isWalleeTransaction()) }]
-<button type="submit" id="button-confirm" class="btn btn-lg btn-primary pull-right submitButton nextStep largeButton" disabled="disabled">
-	<i class="fa fa-check"></i> [{oxmultilang ident="SUBMIT_ORDER"}]
-</button>
+[{if ($oView->isWalleeTransaction())}]
+	<button type="submit" id="button-confirm" class="Button Button--primary basketNextBTN pull-right" disabled="disabled">[{oxmultilang ident="PAGE_CHECKOUT_ORDER_SUBMITORDER"}]</button>
 [{else}]
-[{$smarty.block.parent}]
+    [{$smarty.block.parent}]
 [{/if}]
